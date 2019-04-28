@@ -1,0 +1,141 @@
+
+.normal-page{
+  ul, ol{
+    padding-left: 1em;
+    list-style-type: circle;
+  }
+  ol{
+    list-style-type: decimal;
+  }
+  ul{
+    ul{
+      list-style-type: square;
+      ul{
+        list-style-type: circle;
+      }
+    }
+  }
+  li{
+    margin-bottom: 0.25em;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5{
+    margin-bottom: 0.5em;
+  }
+  img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+  }
+}
+.lh-15{
+  line-height: 1.5;
+}
+
+// .container-wide{
+//   max-width: 1500px !important;
+// }
+
+// bootstrap customizations
+$container-max-widths: (
+  xl: 1300px
+) !default;
+
+$theme-colors: (
+  "primary": #371a42,
+  "danger": #da5959,
+  "warning": #ffeaab,
+  "success": #258e3d,
+  "lb-yellow": #F8BE43,
+);
+
+$font-family-sans-serif: "proxima-nova";
+
+@import "./../../../vendor/laravel/spark-aurelius/resources/assets/sass/spark";
+
+.card{
+  border-radius: 0;
+  box-shadow: 0 6px 9px rgba(144, 164, 183, 0.2);
+  background-color: #F9FCFF;
+}
+.btn{
+  border-radius: 100px !important;
+}
+.btn-primary  {
+    color: map-get($theme-colors, primary);
+    background-color: map-get($theme-colors, lb-yellow);
+    border-color: map-get($theme-colors, lb-yellow);
+}
+.btn-primary:hover{
+  color: map-get($theme-colors, primary);
+  background-color: map-get($theme-colors, lb-yellow);
+  border-color: map-get($theme-colors, primary);
+}
+.btn-outline-primary {
+    color: map-get($theme-colors, primary);
+    background-color: transparent;
+    background-image: none;
+    border-color: map-get($theme-colors, lb-yellow);
+    box-shadow: 0 0 0 transparent;
+    &:hover{
+      background-color: map-get($theme-colors, lb-yellow);
+      color: map-get($theme-colors, primary);
+      border-color: map-get($theme-colors, lb-yellow);
+    }
+}
+.progress{
+  border-radius: 100px;
+  height: 30px;
+
+}
+.progress-bar{
+  background-color: map-get($theme-colors, lb-yellow);
+  color: map-get($theme-colors, primary);
+  font-size: 1.25em;
+}
+.navbar-spark{
+  position: relative;
+  z-index: 9999;
+}
+.text-black-25 {
+    color: rgba(55, 63, 67, 0.25) !important;
+}
+.bdras-100{
+  border-radius: 100%;
+}
+.smaller{
+  font-size: 0.9em;
+}
+.lead--small{
+  font-size: 1.1em;
+}
+.text-lb-yellow {
+    color: map-get($theme-colors, lb-yellow) !important;
+}
+.h3-important{
+  font-size: 1.75rem !important;
+}
+.maw-50{
+  max-width: 50px;
+}
+.white-space{
+  white-space: pre-line;
+}
+.draggable-icon{
+  opacity: 0.5;
+  width: 25px;
+  height: auto;
+  vertical-align: bottom;
+}
+.top-draggable-section{
+  list-style-type: none;
+}
+.dragging-hand{
+  cursor: move;
+}
+
