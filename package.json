@@ -19,7 +19,7 @@
     "lodash": "^4.17.4",
     "urijs": "^1.17.0",
     "vue": "2.5.16",
-    "axios": "^0.18"
+    "axios": "^0.21"
   },
   "devDependencies": {
     "vuedraggable": "^2.16.0"
